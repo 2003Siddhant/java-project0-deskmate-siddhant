@@ -6,12 +6,12 @@ import org.apache.logging.log4j.Logger;
 
 import com.deskmate.config.AppConfig;
 import com.deskmate.constants.Role;
+import com.deskmate.controller.*;
 import com.deskmate.exception.DatabaseOperationException;
 import com.deskmate.exception.DoubleBookingException;
 import com.deskmate.exception.EntityNotFoundException;
 import com.deskmate.exception.ValidationException;
 import com.deskmate.utils.InputUtils;
-
 
 
 public class App {
@@ -36,10 +36,10 @@ public class App {
 
                 int c = InputUtils.readInt("Choose: ");
                 switch (c) {
-//                    case 1 -> {
-//                        if (role != Role.ADMIN) System.out.println("Access denied.");
-//                        else cfg.deskController().menu();
-//                    }
+                    case 1 -> {
+                        if (role != Role.ADMIN) System.out.println("Access denied.");
+                        else cfg.deskController().menu();
+                    }
 //                    case 2 -> cfg.bookingController().menu();
 //                    case 3 -> cfg.reportController().menu();
                     case 0 -> {
