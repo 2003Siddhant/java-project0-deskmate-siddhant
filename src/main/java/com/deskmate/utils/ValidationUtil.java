@@ -1,6 +1,6 @@
 package com.deskmate.utils;
 
-import com.deskmate.dbps.exception.ValidationException;
+import com.deskmate.exception.ValidationException;
 
 public final class ValidationUtil {
     private ValidationUtil() {}
@@ -18,3 +18,4 @@ public final class ValidationUtil {
     public static void requireNonBlank(String v, String field) {
         if (v == null || v.trim().isEmpty()) throw new ValidationException(field + " is required");
     }
+}
