@@ -1,6 +1,7 @@
 package com.deskmate.services;
 
 import java.util.List;
+// this is a desk service class
 
 import com.deskmate.dao.DeskDao;
 import com.deskmate.exception.EntityNotFoundException;
